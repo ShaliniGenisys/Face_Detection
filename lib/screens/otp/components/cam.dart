@@ -99,7 +99,7 @@ class _CameraScreenState extends State<CameraScreen> {
                         'Image': img64
                       }),
                     );
-
+                    print(res.body);
                     if (json.decode(res.body)["message"] ==
                         "Face successfully verified.") {
                       Navigator.pushNamed(

@@ -8,7 +8,6 @@ import 'package:shop_app/screens/fail/sign_in_fail.dart';
 import 'package:shop_app/screens/forgot_password/forgot_password_screen.dart';
 import 'package:shop_app/screens/home/home_screen.dart'; // sign in camera
 import 'package:shop_app/screens/login_success/login_success_screen.dart';
-import 'package:shop_app/screens/otp/components/cam2.dart';
 import 'package:shop_app/screens/otp/components/otp_form.dart';
 import 'package:shop_app/screens/otp/otp_screen.dart';
 import 'package:shop_app/screens/sign_in/sign_in_screen.dart';
@@ -113,14 +112,7 @@ class RouteGenerator {
               bvn: argument.bvn,
               phno: argument.phno);
         });
-      case "/cam2":
-        return MaterialPageRoute(builder: (_) {
-          ScreenArguments argument = args;
-          return FacePage(
-              entry_type: argument.entry_type,
-              bvn: argument.bvn,
-              phno: argument.phno);
-        });
+      
       case "/uploadPicture":
         return MaterialPageRoute(builder: (_) {
           ScreenArguments argument = args;
